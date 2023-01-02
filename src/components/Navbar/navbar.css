@@ -1,0 +1,107 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: #fff;
+}
+.navbar__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.toggle-nav,
+.toggle-nav::before,
+.toggle-nav::after {
+    display: block;
+    background-color: #cfc8c8;
+    height: 3px;
+    width: 30px;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+}
+.toggle-nav::before,
+.toggle-nav::after {
+    content: "";
+}
+.toggle-nav::before {
+    transform: translateY(-8px);
+}
+.toggle-nav::after {
+    transform: translateY(5px);
+}
+.toggle-nav {
+    display: none;
+}
+.nav__link {
+    font-weight: var(--font-medium);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s all;
+}
+.nav__menu .icon {
+    display: none;
+}
+
+/* Active link */
+.active-link,
+.nav__link:hover {
+    color: black;
+}
+
+/* Open Menu */
+.show-menu .nav__menu {
+    bottom: 75px
+}
+.show-menu .toggle-nav {
+    background-color: transparent;
+}
+.show-menu .toggle-nav::before {
+    transform: translateY(0px) rotate(45deg);
+}
+.show-menu .toggle-nav::after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+/* ========== BREAKPOINTS  ========== */
+/* For Smartphone */
+@media screen and (max-width: 767px) {
+
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .nav__menu .icon {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .toggle-nav {
+        display: block;
+    }
+    .navbar {
+        top: initial;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+}

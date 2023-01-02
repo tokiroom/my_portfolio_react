@@ -1,0 +1,8 @@
+.social-link {
+    font-size: 3rem;
+    color: black;
+    transition: .3s all;
+}
+.social-link:hover {
+    transform: scale(1.1);
+}

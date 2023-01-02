@@ -1,3 +1,153 @@
+/* ========== GOOGLE FONTS ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ========== ICONS ==========*/
+@import url('assets/icons.css');
+
+/* ========== VARIABLES CSS ========== */
+:root {
+  /* ===== Font and Typography ===== */
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px ... */
+  --big-font-size: 3.5rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+
+  /* ===== Font weight ===== */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /* ===== Z - Index ===== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* ========== BASE  ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  color:#000;
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ========== REUSABLE CLASS  ========== */
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: ;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* ========== LAYOUT  ========== */
+[class*="__container"]{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ========== BUTTONS  ========== */
+.btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+/* ========== BREAKPOINTS  ========== */
+/* For Smartphone */
+@media screen and (max-width: 767px) {
+  
+}
+
+/* For Tablet */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  
+}
+
+/* For Desktop */
+@media screen and (max-width: 1024px) {
+  
+}
+
+
 .App {
   text-align: center;
 }

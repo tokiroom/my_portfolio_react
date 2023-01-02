@@ -1,0 +1,18 @@
+.footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.25rem;
+    padding: 2rem 0;
+}
+.footer__social {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+.footer__copiraitung {
+    padding: 2rem 0;
+    text-align: center;
+}
