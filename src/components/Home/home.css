@@ -28,7 +28,7 @@
     overflow: hidden;
     width: 350px;
     height: 350px;
-    background-image: url(../About/avatar.jpg);
+    background-image: url(../about/avatar.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: inset 5px 5px 0px 10px rgb(0 0 0 / 50%);
@@ -38,26 +38,13 @@
 .avatar {
     transform: translateY(-12%);
 }
+.home__button {
+    transition: 0.3s all;
+}
+.home__button:hover {
+    transform: scale(1.1);
+}
 
-/* .home__button {
-    overflow: hidden;
-    position: relative;
-}
-.home__button::before {
-    content: '';
-    position: absolute;
-    background: #fff;
-    width: 8px;
-    top: 0;
-    bottom: 0;
-    left: -38px;
-    transform: rotate(-16deg);
-    filter: blur(6px);
-}
-.home__button:hover::before {
-    left: calc(100% + 32px);
-    transition: 0.75s;
-} */
 @keyframes profile_anim {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;

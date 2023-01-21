@@ -11,21 +11,27 @@ export default function About() {
         <div className="about__container">
             <img src={MyFoto} alt="My foto" className="about__img" />
             <div className="about__data">
-                <div className="data__item">
-                    <i className='icon-star-half'></i>
-                    <h3>Experience</h3>
-                    <span>3 Years Working</span>
+                <div className="data__wrapper">
+                    <div className="data__item">
+                        <i className='icon-star-half'></i>
+                        <h3 className='item__title'>Experience</h3>
+                        <span className='item__discription'>3+ Years</span>
+                    </div>
+                    <div className="data__item">
+                        <i className='icon-paste'></i>
+                        <h3 className='item__title'>Completed</h3>
+                        <span className='item__discription'>31+ Project</span>
+                    </div>
+                    <div className="data__item">
+                        <i className='icon-bubbles3'></i>
+                        <h3 className='item__title'>Support</h3>
+                        <span className='item__discription'>Online 24/7</span>
+                    </div>
                 </div>
-                <div className="data__item">
-                    <i className='icon-paste'></i>
-                    <h3>Completed</h3>
-                    <span>31+ Project</span>
-                </div>
-                <div className="data__item">
-                    <i className='icon-bubbles3'></i>
-                    <h3>Support</h3>
-                    <span>Online 24/7</span>
-                </div>
+                <p className="about__info">
+                    Frontend developer, I created web pages with UI/UX user interface, I have years of experience and many clients are happy with the projects carried out.
+                </p>
+                
                 <a href={CV} className="btn about__button" download>Download CV <i className='icon-file-text2'></i></a>
             </div>
         </div>

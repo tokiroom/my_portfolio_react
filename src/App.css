@@ -132,20 +132,24 @@ button {
 }
 
 /* ========== BREAKPOINTS  ========== */
-/* For Smartphone */
-@media screen and (max-width: 767px) {
-  
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 2rem 0 2rem;
+  }
+  .section__subtitle {
+    margin-bottom: 2rem;
+  }
 }
 
-/* For Tablet */
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  
-}
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {}
 
-/* For Desktop */
-@media screen and (max-width: 1024px) {
-  
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {}
 
 
 .App {
