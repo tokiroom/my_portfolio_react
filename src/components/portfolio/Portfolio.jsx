@@ -31,6 +31,20 @@ export default function Portfolio() {
             img: '../img/projects/cool-gallery-miami.jpg',
             link: '../Cool-gallery-miami/index.html',
         },
+        {
+            id: '5',
+            сategory: 'Sait',
+            name: 'Attorneyster',
+            img: '../img/projects/attorneyster.jpg',
+            link: '../Attorneyster/index.html',
+        },
+        {
+            id: '6',
+            сategory: 'Parallax',
+            name: 'Creative-scroll-website',
+            img: '../img/projects/creative-scroll-website.jpg',
+            link: '../Creative-scroll-website/index.html',
+        },
     ]
     const [portflioTab, setTab] = useState('all')
     const portfolio = portflioTab == 'all' ? portfolioItem : portfolioItem.filter(item => item.сategory == portflioTab)

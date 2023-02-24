@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="footer__social">
                     <Social />
                 </div>
-                <div className="footer__copiraitung">
+                <div className="footer__copywriting">
                     <p>&#169; Tokiroom 2022. All rights reserved.</p>
                 </div>
             </div>

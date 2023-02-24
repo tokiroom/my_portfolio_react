@@ -21,7 +21,10 @@
 }
 .preview__wrap {
     overflow: hidden;
-    max-height: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 335px;
     margin-bottom: 15px;
 }
 .portfolio__list {
